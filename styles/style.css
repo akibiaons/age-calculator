@@ -101,3 +101,24 @@ span .error {
 .result span {
   color: var(--Purple);
 }
+
+@media screen and (max-width: 400px) {
+  .card-container {
+    max-width: 300px;
+  }
+
+  .result {
+    font-size: 1.3rem;
+  }
+
+  .form-group input {
+    width: 100%;
+    font-size: .8rem;
+  }
+
+  .form-group span.error {
+    font-size: .5rem;
+    margin-top: .2rem;
+    width: 100%;
+  }
+}
