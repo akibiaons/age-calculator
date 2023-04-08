@@ -45,9 +45,10 @@ function CheckMonthInput () {
 function CheckYearInput () {
     let value = InputYear.value;
     let currentYear = new Date().getFullYear();
+    console.log(currentYear);
     if (value == '') {
         YearError.innerHTML = InputRequiredError;
     } else if (value < 1 || value > 120) {
-
+        
     }
 };
