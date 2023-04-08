@@ -12,7 +12,11 @@
 /* Set core body defaults */ /*Below is the css that centers the solution*/
 body {
   font-family: 'Poppins', sans-serif;
-  text-rendering: optimizeSpeed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--Off-Black);
+  background-color: var(--Light-Gray);
   line-height: 1.5;
   display: flex;
   flex-direction: column;
