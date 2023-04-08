@@ -43,7 +43,8 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -52,8 +53,6 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
-
 
 /* Below is the code from the age calculator front end mentor tutorial */
 
