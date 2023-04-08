@@ -1,3 +1,13 @@
+/*Below is the root styling for the age calculator web app*/
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-Red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-White: hsl(0, 0%, 94%);
+  --Light-Gray: hsl(0, 0%, 86%);
+  --Smoke-Gray: hsl(0, 1%, 44%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
 
 /* Box sizing rules */
 *,
@@ -73,3 +83,5 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Below is the code from the age calculator front end mentor tutorial */
