@@ -33,6 +33,7 @@ body {
   padding: 2rem;
   max-width: 520px;
   border-radius: 1rem;
+  border-bottom-right-radius: 30%;
 }
 
 .form {
@@ -60,4 +61,31 @@ body {
   border-radius: .3rem;
   font-family: inherit;
   font-size: 1.3rem;
+}
+
+span .error {
+  display: inline-block;
+  color: var(--Light-Red);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.btn {
+  margin: 0 auto;
+  border: none;
+  background-color: var(--Purple);
+  border-radius: 50%;
+  font-family: inherit;
+  cursor: pointer;
+  padding: .8rem 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn img {
+  width: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--Light-Red);
 }
