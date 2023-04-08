@@ -79,3 +79,14 @@ function calculateAge(birthday) {
         DayResult.innerHTML = days;
 };
 // If birthdate month and day are after the current day and month subtract one year from age...
+
+// Below is the submit button
+SubmitBtn.addEventListener ('click', function (e) {
+    e.preventDefault();
+    let day = CheckDayInput();
+    let month = CheckMonthInput();
+    let year = CheckYearInput();
+    if (!day || !month || !year) return 
+    let birthday = `${inputMonth.value}/${inputDay.value}/${InputYear.value}`;
+    calculateAge(birthday);
+});
