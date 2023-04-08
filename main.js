@@ -31,5 +31,7 @@ function CheckDayInput () {
 // Above is a function that checks for the day input to ensure the correct values.
 function CheckMonthInput () {
     let value = InputMonth.value;
-    
+    if (value == '') {
+        MonthError.innerHTML = InputRequiredError;
+    }
 };
