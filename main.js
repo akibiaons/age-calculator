@@ -33,5 +33,21 @@ function CheckMonthInput () {
     let value = InputMonth.value;
     if (value == '') {
         MonthError.innerHTML = InputRequiredError;
+    } else if (value < 1 || value > 12) {
+        MonthError.innerHTML = InputMonthError;
+        return false;
+    } else {
+        MonthError.innerHTML = '';
+        return true;
+    }
+};
+
+function CheckYearInput () {
+    let value = InputYear.value;
+    let currentYear = new Date().getFullYear();
+    if (value == '') {
+        YearError.innerHTML = InputRequiredError;
+    } else if (value < 1 || value > 120) {
+
     }
 };
