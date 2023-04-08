@@ -1,0 +1,13 @@
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom-right-radius: 30%;
+}
+/*The css above ensures that the form looks good*/
