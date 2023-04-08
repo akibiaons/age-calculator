@@ -11,8 +11,7 @@
 
 /* Set core body defaults */ /*Below is the css that centers the solution*/
 body {
-  font-family: 'Fraunces', serif;
-  font-family: 'Montserrat', sans-serif;  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   display: flex;
@@ -36,5 +35,10 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom-right-radius: 30%;
 }
