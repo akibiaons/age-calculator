@@ -64,5 +64,18 @@ function calculateAge(birthday) {
     let years = today.getFullYear() - birthdate.getFullYear();
     let months = today.getMonth() - birthdate.getMonth();
     let days = today.getDate() - birthdate.getDate();
+
+    if (months < 0 || (months === 0 && days < 0)) {
+        years--;
+        if (months === 0) {
+            months = 11;
+        } else {
+            months = 12 + months;
+        }
+        days = 30 + days;
+    }
+        YearResult.innerHTML = years;
+        MonthResult.innerHTML = months;
+        DayResult.innerHTML = days;
 };
 // If birthdate month and day are after the current day and month subtract one year from age...
