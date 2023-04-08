@@ -57,3 +57,12 @@ function CheckYearInput () {
         return true;
     }
 };
+
+function calculateAge(birthday) {
+    let birthdate = new Date(birthday);
+    let today = new Date();
+    let years = today.getFullYear() - birthdate.getFullYear();
+    let months = today.getMonth() - birthdate.getMonth();
+    let days = today.getDate() - birthdate.getDate();
+};
+// If birthdate month and day are after the current day and month subtract one year from age...
