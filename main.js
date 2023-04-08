@@ -23,5 +23,8 @@ function CheckDayInput () {
     } else if (value < 1 || value > 31){
         DayError.innerHTML = InputDayError;
         return false;
+    } else {
+        DayError.innerHTML = '';
+        return true;
     }
 }
