@@ -48,7 +48,12 @@ function CheckYearInput () {
     console.log(currentYear);
     if (value == '') {
         YearError.innerHTML = InputRequiredError;
-    } else if (value < 1 || value > 120) {
-        
+        return false;
+    } else if (value > currentYear) {
+        YearError.innerHTML = InputYearError;
+        return false;
+    } else {
+        YearError.innterHTML = '';
+        return true;
     }
 };
