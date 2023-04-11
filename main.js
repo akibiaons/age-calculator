@@ -87,7 +87,7 @@ SubmitBtn.addEventListener ('click', function (e) {
     let month = CheckMonthInput();
     let year = CheckYearInput();
     if (!day || !month || !year) return 
-    let birthday = `${inputMonth.value}/${InputDay.value}/${InputYear.value}`;
+    let birthday = `${InputMonth.value}/${InputDay.value}/${InputYear.value}`;
     calculateAge(birthday);
     Canvas.style.display = 'block';
     setTimeout(function () {
