@@ -5,18 +5,18 @@ const YearResult = document.querySelector('.year-result');
 const MonthResult = document.querySelector('.month-result');
 const DayResult = document.querySelector('.day-result');
 const SubmitBtn = document.querySelector('.btn');
-const InputDay = document.querySelector('day');
-const InputMonth = document.querySelector('month');
-const InputYear = document.querySelector('year');
+const InputDay = document.getElementById('day');
+const InputMonth = document.getElementById('month');
+const InputYear = document.getElementById('year');
 const InputRequiredError = 'This field is required';
 const InputDayError = 'Must be a valid day';
 const InputMonthError = 'Must be a valid month';
 const InputYearError = 'Must be in the past';
-const canvar = document.querySelector('.can');
+const Canvas = document.querySelector('.can');
 // Above we declare some variables for the calculator form.
 
 function CheckDayInput () {
-    let value = InputDay.value;
+    let value = InputDay;
     if (value == '') {
         DayError.innerHTML = InputRequiredError;
         return false;
@@ -30,7 +30,7 @@ function CheckDayInput () {
 };
 // Above is a function that checks for the day input to ensure the correct values.
 function CheckMonthInput () {
-    let value = InputMonth.value;
+    let value = InputMonth;
     if (value == '') {
         MonthError.innerHTML = InputRequiredError;
     } else if (value < 1 || value > 12) {
@@ -43,7 +43,7 @@ function CheckMonthInput () {
 };
 
 function CheckYearInput () {
-    let value = InputYear.value;
+    let value = InputYear;
     let currentYear = new Date().getFullYear();
     console.log(currentYear);
     if (value == '') {
@@ -93,4 +93,4 @@ SubmitBtn.addEventListener ('click', function (e) {
     setTimeout(function () {
         Canvas.style.display = 'none';
     }, 8000);
-});
+})
